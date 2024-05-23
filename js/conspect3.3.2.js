@@ -191,9 +191,10 @@ console.log(values6); // ['The Last Kingdom', 'Bernard Cornwell', 8.38]
 
 const entries = Object.entries(book6);
 console.log(entries);
-// [["title", "The Last Kingdom"], ["author", "Bernard Cornwell"], ["rating", 8.38]]  
+// [["title", "The Last Kingdom"], ["author", "Bernard Cornwell"], ["rating", 8.38]]
 
 
 // ЦІКАВО
 
 // На практиці метод Object.entries(obj) використовується рідко, тільки для якихось дуже специфічних завдань.У 99 % випадків буде використаний метод Object.keys() або Object.values().
+

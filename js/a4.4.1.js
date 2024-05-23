@@ -1,4 +1,4 @@
-// Завдання 1/48
+// 4.4 Завдання 1/48
 // Доповни код таким чином, щоб у змінній result був результат виконання функції makePizza, а у змінній pointer було посилання на функцію makePizza.
 
 // Оголошена функція makePizza
@@ -15,3 +15,4 @@ function makePizza() {
 
 const result = makePizza();
 const pointer = makePizza;
+
