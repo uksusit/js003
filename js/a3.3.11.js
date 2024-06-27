@@ -93,7 +93,11 @@ console.log(advert);
 // Функція підраховує тільки власні властивості об'єкта
 
 
-
+/**
+ * 
+ * @param {object} obj рахує і повертає кількість власних властивостей
+ * @returns 
+ */
 function countProps(object) {
   let propCount = 0;
   // Change code below this line
