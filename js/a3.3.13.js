@@ -1,4 +1,6 @@
-// Перебери об'єкт apartment, використовуючи метод Object.keys() і цикл for...of. Запиши у змінну keys масив ключів власних властивостей об'єкта apartment, і додай в масив values всі значення його властивостей.
+// Перебери об'єкт apartment, використовуючи метод Object.keys() і цикл for...of.
+//  Запиши у змінну keys масив ключів власних властивостей об'єкта apartment,
+//  і додай в масив values всі значення його властивостей.
 
 // Оголошена змінна apartment.
 // Значення змінної apartment - це об'єкт.
@@ -29,4 +31,30 @@ for (const key of keys) {
 
 }
 console.log(values);
+
+
+// --------------------------------- 14 ------------
+
+console.log("----------- autochek number 14 ------------");
+function countProps(object) {
+  // Change code below this line
+  let propCount = 0;
+
+const keys = Object.keys(object);
+  console.log("obj keys: ", keys);
+  console.log(object);
+  for (const key of keys) {
+    // if (object.hasOwnProperty(key)) {
+    propCount += 1;
+    console.log(propCount);
+    // }
+  }
+  console.log("has keys: ", propCount);
+  return propCount;
+  // Change code above this line
+}
+
+
+countProps({ mail: "poly@mail.com", isOnline: true, score: 500 });
+
 
