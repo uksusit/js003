@@ -56,8 +56,6 @@ const keys = Object.keys(object);
 
 // -------------------------не принято нижче
 
-
-
 function countProps(object) {
   // Change code below this line
 
