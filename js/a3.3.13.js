@@ -37,24 +37,48 @@ console.log(values);
 
 console.log("----------- autochek number 14 ------------");
 
+
 function countProps(object) {
   // Change code below this line
   let propCount = 0;
-  console.log("object=", object);
 const keys = Object.keys(object);
-  console.log("obj keys: ", keys);
-  console.log("-------------------------");
   for (const key of keys) {
-    if (object.hasOwnProperty(key)) {
-      console.log("obj key: ", key);
-      console.log("obj key values: ", object[key]);
     propCount += 1;
-  console.log("-----^---key", propCount);
     }
-  }
-    // propCount = Object.keys(object).length;
-//   console.log("sum keys in object: ", propCount);
+  
   return propCount;
+   // return Object.keys(object).length;
+  // Change code above this line
+}
+
+// countProps({ name: "poly", mail: "poly@mail.com", isOnline: true, score: 500 });
+
+
+// -------------------------не принято нижче
+
+
+
+function countProps(object) {
+  // Change code below this line
+
+//   let propCount = 0;
+//   console.log("object=", object);
+const keys = Object.keys(object);
+//   console.log("obj keys: ", keys);
+//   console.log("-------------------------");
+//   for (const key of keys) {
+//     if (object.hasOwnProperty(key)) {
+//       console.log("obj key: ", key);
+//       console.log("obj key values: ", object[key]);
+//     propCount += 1;
+//   console.log("-----^---key", propCount);
+//     }
+//   }
+//     // propCount = Object.keys(object).length;
+// //   console.log("sum keys in object: ", propCount);
+  //   return propCount;
+  console.log(Object.keys(object).length);
+    return  Object.keys(object).length;
   // Change code above this line
 }
 
