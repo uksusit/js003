@@ -46,3 +46,13 @@ return productPrice;
   // Change code above this line
 }
 getProductPrice("Droid");
+
+
+// Напиши функцію getProductPrice(productName), яка приймає один параметр productName - назва продукту. Функція шукає об'єкт продукту з таким ім'ям (властивість name) в масиві products і повертає його ціну (властивість price). Якщо продукт з такою назвою не знайдений, функція повинна повертати null.
+
+// Оголошена функція getProductPrice(productName).
+// Виклик getProductPrice("Radar") повертає 1300.
+// Виклик getProductPrice("Grip") повертає 1200.
+// Виклик getProductPrice("Scanner") повертає 2700.
+// Виклик getProductPrice("Droid") повертає 400.
+// Виклик getProductPrice("Engine") повертає null.
