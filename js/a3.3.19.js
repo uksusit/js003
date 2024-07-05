@@ -17,17 +17,24 @@ const prodts =[];
         const values = Object.values(product);
         console.log("values: ", values);
         
-        if (product.key = propName) {
-            console.log("product.key: ", product.key);
+      if (product.key = propName) {
+        console.log("product.key: ", product.key);
             
-            console.log("product.value: ", product.value);
+        console.log("product.value: ", product[propName]);
 
-            prodts.push(product.value);
+            prodts.push(product[propName]);
             console.log("return: ", prodts);
         }
-    }
+  }
+
+  return prodts;
 
   // Change code above this line
 }
 
-getAllPropValues("name")
+// getAllPropValues("name");
+            console.log("-------------------next ");
+
+getAllPropValues("category");
+
+
