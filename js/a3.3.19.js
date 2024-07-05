@@ -11,28 +11,27 @@ function getAllPropValues(propName) {
 const prodts =[];
     for (const product of products) {
         console.log("product: ", product);
-        
-        const { name, price, quantity } = product;
-
-        const values = Object.values(product);
-        console.log("values: ", values);
-        
+        // const { name, price, quantity } = product;
+        // const values = Object.values(product);
+        // console.log("values: ", values);
+        console.log("propname: ",  propName);
       if (product.key = propName) {
         console.log("product.key: ", product.key);
-            
-        console.log("product.value: ", product[propName]);
+        console.log("product.value: ", product[product.key]);
+        if (product[product.key] != undefined) {
+            prodts.push(product[product.key]);
+        }
 
-            prodts.push(product[propName]);
-            console.log("return: ", prodts);
         }
   }
 
+            console.log("return: ", prodts);
   return prodts;
 
   // Change code above this line
 }
 
-// getAllPropValues("name");
+getAllPropValues("name");
             console.log("-------------------next ");
 
 getAllPropValues("category");
