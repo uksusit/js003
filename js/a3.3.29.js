@@ -33,4 +33,5 @@ const overrideSettings = {
   timePerQuestion: 30,
 };
 // Change code below this line
-const finalSettings = {...defaultSettings, ...overrideSettings};
+const finalSettings = { ...defaultSettings, ...overrideSettings };
+console.log(finalSettings);
