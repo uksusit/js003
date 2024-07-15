@@ -37,7 +37,8 @@ function makeTask(data) {
   // makedTask.push(data);
 
   console.log(makedTask);
-    
+    return makedTask;
+
   // Change code above this line
 }
 
