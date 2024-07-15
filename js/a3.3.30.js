@@ -24,8 +24,21 @@ function makeTask(data) {
   const category = "General";
   const priority = "Normal";
   // Change code below this line
+  // 
+  
+  
+  const makedTask = {
+    completed,
+    category,
+    priority,
+    ...data
+  };  
 
-    
+  // makedTask.push(data);
+
+  console.log(makedTask);
     
   // Change code above this line
 }
+
+  makeTask({ category: "Finance", text: "Take interest" })
