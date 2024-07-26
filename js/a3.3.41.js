@@ -7,39 +7,45 @@ const atTheOldToad = {
   ],
   // Change code below this line
 
-    getPotions() {
-      // console.log(this.potions(...arguments));
-      
-    return this.potions;
+  getPotions() {
+    const  potionsAll = [];
+    for (const potion of this.potions) {
+      const {name, price} = potion;
+      console.log("current potion = ", potion);
+      console.log("potion name = ", potion.name );
+      console.log("potion price = ", potion.price);
+      potionsAll.push(potion);
+      console.log("potions = ", ...potionsAll);
+    // return potionsAll;
+      }
+      console.log("-------------------------end get ptns--------------------");
   },
+
   addPotion(newPotion) {
-
-      console.log(this.potions);
-    console.log(this.newPotion);
-        console.log(this.potions.name);
-
-    
-    console.log(this.potions); 
-    // console.log(oldName, newName);
-    console.log(this.addPotion);
-     
+    for (const potion of this.potions) {
+      const { name, price } = potion;
+      console.log("current potion = ", potion);
+    console.log("new potion = ", newPotion);
+    //     console.log(potion.name);
+    // console.log(this.addPotion);
 let index = this.potions.indexOf(newPotion) ;
     console.log(index); 
 
   this.potions.splice(index, 1, newPotion);
       console.log(this.potions);
       return this.potions;
-
-    
-    
-    
-    
     if (this.potions.includes(newPotion)) {
       return `Error! Potion ${newPotion} is already in your inventory!`;
     }
 
     this.potions.push(newPotion);
+    }
+     
   },
+
+    
+    // console.log(this.potions); 
+    // console.log(oldName, newName);
   removePotion(potionName) {
     const potionIndex = this.potions.indexOf(potionName);
 
@@ -79,6 +85,7 @@ let index = this.potions.indexOf(newPotion) ;
   // Change code above this line
 };
 
+atTheOldToad.getPotions();
 atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
 
 
