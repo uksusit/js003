@@ -29,13 +29,13 @@ const forecast = {
 };
 // Change code below this line
 
-const highToday = forecast.today.high;
-const lowToday = forecast.today.low;
-const todayIcon = forecast.today.icon;
+// const highToday = forecast.today.high;
+// const lowToday = forecast.today.low;
+// const todayIcon = forecast.today.icon;
 
-const highTomorrow = forecast.tomorrow.high;
-const lowTomorrow = forecast.tomorrow.low;
-const tomorrowIcon = forecast.tomorrow.icon;
+// const highTomorrow = forecast.tomorrow.high;
+// const lowTomorrow = forecast.tomorrow.low;
+// const tomorrowIcon = forecast.tomorrow.icon;
 
 const { today: { high: highToday, low: lowToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"},
     tomorrow: { high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" }
