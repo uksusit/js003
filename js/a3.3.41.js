@@ -25,45 +25,58 @@ const atTheOldToad = {
   //   },
 
   getPotions() {
-    const { ...potion } = this.potions;
-     console.log("potions : ", this.potions);
+    const potAll = [];
+    for (const potion of this.potions){potAll.push(potion)};
+    console.log(...potAll);
+    return potAll;
+    // return this.potions;
+  },
+
+  // getPotions() {
+  //   const { ...potion } = this.potions;
+  //    console.log("potions : ", this.potions);
+  //   const potionsAll = [];
+  //   for (const potion of this.potions) {
+  //     const { name, price } = potion;
+  //     // console.log("potions = ", this.potions);
+  //     // console.log("current potion = ", potion);
+  //     // console.log("potion name = ", potion.name);
+  //     // console.log("potion price = ", potion.price);
+  //     potionsAll.push(potion);
+  //     console.log("potions = ", ...potionsAll);
+  //     // return potionsAll;
+  //   }
+  //   console.log("-------------------------end get ptns--------------------");
+  // },
+// };
+
+  addPotion(newPotion) {
     const potionsAll = [];
     for (const potion of this.potions) {
+    // let potionAdd = this.potions.find(potion => potion.name === newPotion);
+    // console.log(potionAdd);
+       console.log("current potion = ", potion);
+    console.log("new potion = ", newPotion);  
       const { name, price } = potion;
-      console.log("potions = ", this.potions);
-      console.log("current potion = ", potion);
-      console.log("potion name = ", potion.name);
-      console.log("potion price = ", potion.price);
-      potionsAll.push(potion);
-      console.log("potions = ", ...potionsAll);
-      // return potionsAll;
+      if (potion === newPotion) {      
+        console.log(`Error! Potion ${newPotion} is already in your inventory!`);
+      };
+        potionsAll.push(potion)
     }
-    console.log("-------------------------end get ptns--------------------");
-  },
-};
-
-//   addPotion(newPotion) {
-//     const potionsAll = [];
-//     for (const potion of this.potions) {
-//     // let potionAdd = this.potions.find(potion => potion.name === newPotion);
-//     // console.log(potionAdd);
-//       const { name, price } = potion;
-//       potionsAll.push(potion);
-//     }
-//     console.log("---- potions all = ", ...potionsAll);
-//     console.log("new potion = ", newPotion);
-//     if (potionsAll.includes(newPotion)) {
-//       console.log(`Error! Potion ${newPotion} is already in your inventory!`);
-//       return `Error! Potion ${newPotion} is already in your inventory!`;
-//     }
-//     this.potions.push(newPotion);
-//     // console.log(this.potions.length - 1);
-//     // const newPotionIndex = (this.potions.length - 1);
-//     // console.log(this.potions[newPotionIndex]);
+    console.log("---- potions all = ", ...potionsAll);
+    console.log("new potion = ", newPotion);
+    if (potionsAll.includes(newPotion)) {
+      console.log(`Error! Potion ${newPotion} is already in your inventory!`);
+      return `Error! Potion ${newPotion} is already in your inventory!`;
+    }
+    this.potions.push(newPotion);
+    // console.log(this.potions.length - 1);
+    // const newPotionIndex = (this.potions.length - 1);
+    // console.log(this.potions[newPotionIndex]);
     
-//     return this.potions;
+    return this.potions;
      
-//   },
+  },
 
     
 //     // console.log(this.potions); 
@@ -105,11 +118,11 @@ const atTheOldToad = {
 //     }
   
 //   // Change code above this line
-// };
+};
 
 // atTheOldToad.costPotions("Dragon breath", 5)
-atTheOldToad.getPotions();
-// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
+// atTheOldToad.getPotions();
+atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
 // atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
 // atTheOldToad.addPotion({ name: "Power potion", price: 270 });
 // atTheOldToad.addPotion({ name: "Stone skin", price: 240 })
